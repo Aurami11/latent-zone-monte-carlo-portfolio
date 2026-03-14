@@ -1,3 +1,13 @@
+import os
+
+# ======================================================
+# OUTPUT / CACHE
+# ======================================================
+OUTPUT_DIR = "bt_topk_horizon_outputs"
+CACHE_DIR = "yf_cache"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(CACHE_DIR, exist_ok=True)
+
 # ======================================================
 # UNIVERSE / DATA
 # ======================================================
