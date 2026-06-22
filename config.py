@@ -11,32 +11,36 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 # ======================================================
 # UNIVERSE / DATA
 # ======================================================
+# TICKERS = [
+#     "SPY", "QQQ", "DIA", "IWM", "MDY", "VTI", "RSP", "MTUM", "QUAL", "USMV",
+#     "XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY", "XLRE", "XLC",
+#     "EFA", "EEM", "VWO", "VGK", "EWJ", "EWU", "EWC", "EWA",
+#     "BIL", "SHY", "IEF", "TLT", "TIP", "LQD", "HYG", "EMB", "BND",
+#     "VNQ", "GLD", "SLV", "DBC", "USO", 
+# ]
+
 TICKERS = [
-    "SPY", "QQQ", "DIA", "IWM", "MDY", "VTI", "RSP", "MTUM", "QUAL", "USMV",
-    "XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY", "XLRE", "XLC",
-    "EFA", "EEM", "VWO", "VGK", "EWJ", "EWU", "EWC", "EWA",
-    "BIL", "SHY", "IEF", "TLT", "TIP", "LQD", "HYG", "EMB", "BND",
-    "VNQ", "GLD", "SLV", "DBC", "USO",
+    "SPY", "QQQ", "NVTS", "IONQ"
 ]
 
 START = "2016-01-01"
 END = None
 INTERVAL = "1d"
-BACKTEST_START = "2019-01-01"
+BACKTEST_START = "2020-01-01"
 
 
 # ======================================================
 # PORTFOLIO
 # ======================================================
 HORIZON_STEPS = 10
-TOP_K = 30
+TOP_K = 20
 INITIAL_CAPITAL = 100_000.0
 FEE_BPS = 0.0
 FALLBACK_ASSET = "SHY"
 ANNUALIZATION = 252
 
-PROBA_POWER = 0.8
-UPSIDE_POWER = 0.5
+PROBA_POWER = 1
+UPSIDE_POWER = 2
 REQUIRE_PUP_GT_PDN = True
 
 BENCH_6040 = {"SPY": 0.60, "IEF": 0.40}
@@ -69,7 +73,7 @@ TAIL_SIGMA_MULTIPLIER = 2.5
 # ======================================================
 ENERGY_QUANTILE = 0.98
 ENERGY_LOOKBACK = 504
-MIN_ZONE_OBS_FOR_Q = 80
+MIN_ZONE_OBS_FOR_Q = 5
 
 ZONE_P_MIN = 0.02
 ZONE_P_MAX = 0.98
@@ -83,7 +87,7 @@ ENERGY_THRESHOLDS_VOL = [6.0, 8.0]
 # ======================================================
 # LOCAL DYNAMICS / MONTE CARLO
 # ======================================================
-N_PATHS = 2500
+N_PATHS = 5_500
 SEED = 42
 FIT_WINDOW = 504
 REFIT_EVERY = 21
