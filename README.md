@@ -286,5 +286,3 @@ Le dépôt peut être accompagné d’un rapport LaTeX expliquant :
 ## Author
 
 Projet personnel de recherche en modélisation quantitative et allocation de portefeuille.
-
-````
