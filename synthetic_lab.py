@@ -8,7 +8,7 @@ et le branche directement sur core.py pour tester le score composite
 de capital (cohorte / capital unique) et une allocation multi-actifs
 avec seuil individuel par actif.
 
-Dépendances: core.py, config.py (déjà dans votre projet), numpy, pandas.
+Dépendances: core.py, config.py, numpy, pandas.
 """
 
 from __future__ import annotations
